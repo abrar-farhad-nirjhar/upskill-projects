@@ -52,6 +52,10 @@ function checkWinner() {
         winner = values[3]
         
     }
+    if (values[0] === values[3] && values[0]=== values[6] && values[0]!==0) {
+        winner = values[0]
+        
+    }
 
     console.log(winner)
 
