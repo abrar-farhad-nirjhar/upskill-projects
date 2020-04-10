@@ -1,0 +1,58 @@
+body{
+    background: url('background.jpg');
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.container{
+    margin: auto;
+    color:  white;
+    border: 1px solid  #333333;
+    width: 90%;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(255,255,255,0.5);
+
+}
+
+.card{
+    color: white;
+    border: 1px solid #333333;
+    box-shadow: 0 4px 8px 0 rgba(255,255,255,0.5);
+    padding: 5px;
+}
+
+.card-image .img{
+    height: 50%;
+}
+
+.top-part{
+    text-align: center;
+}
+
+@media (min-width:320px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ }
+@media (min-width:480px)  { 
+    .card{
+        width: 80%;
+    }
+
+    
+ }
+
+@media (min-width:600px)  { 
+    .card{
+        width: 80%;
+    }
+}
+
+@media (min-width:801px)  { 
+    .bottom-part{
+        display: flex;
+        justify-content: space-between;
+    }
+    .card{
+        width: 30%;
+    }
+ }
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px) { /* hi-res laptops and desktops */ }
