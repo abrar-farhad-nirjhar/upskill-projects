@@ -12,6 +12,8 @@ function reset(){
         element.innerHTML = ""
     })
     playing=true
+    document.getElementById('verdict').innerHTML = ""
+    document.getElementById('verdict').style = 'black'
 
 }
 function checkWinner() {
@@ -54,12 +56,14 @@ function checkWinner() {
     console.log(winner)
 
     if(winner=='O'){
-        alert('Computer wins!! You lose!!')
+        document.getElementById('verdict').innerHTML = 'Computer wins!! You lose!!'
+        document.getElementById('verdict').style.color = 'red'
         playing=false
         
     }
     else if(winner=='X'){
-        alert("You win!!")
+        document.getElementById('verdict').innerHTML = 'You Win!!'
+        document.getElementById('verdict').style.color = 'green'
         playing=false
     
         
@@ -83,7 +87,7 @@ boxes.forEach((element) => {
             values[parseInt(element.id)] = 'X'
             checkWinner()
             if(indexes.length==0){
-                alert("The match is a draw")
+                document.getElementById('verdict') = "The match is a draw"
             }
             else if(playing){
             random = indexes[Math.floor(Math.random() * indexes.length)];
