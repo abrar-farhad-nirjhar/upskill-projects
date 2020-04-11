@@ -28,10 +28,10 @@ function display_data(){
                 let box
 
                 if(element.completed){
-                    box = `<td><input type="checkbox" onclick="complete(${element.id}, ${element.completed})" class="form-check-input" id="exampleCheck1" checked></input></td>`
+                    box = `<td style="text-align:center;"><input type="checkbox" onclick="complete(${element.id}, ${element.completed})" class="form-check-input" id="exampleCheck1" checked></input></td>`
                 }
                 else{
-                    box = `<td><input type="checkbox" onclick="complete(${element.id}, ${element.completed})" class="form-check-input" id="exampleCheck1"></input></td>`
+                    box = `<td style="text-align:center;"><input type="checkbox" onclick="complete(${element.id}, ${element.completed})" class="form-check-input" id="exampleCheck1"></input></td>`
                 }
                 display+=`
 
@@ -40,7 +40,7 @@ function display_data(){
                 ${box}
                 <td>${element.task}</td>
                 <td>${element.completed}</td>
-                <td>
+                <td style="text-align:center;">
                     <button class="btn btn-danger" onclick="deleteTodo(${element.id})">Delete</button>
                 </td>
                 
